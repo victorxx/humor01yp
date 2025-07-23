@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="humor, piadas, as melhores piadas, humor na net, a piada" />
+  <meta name="description" content="Site de humor com as melhores piadas para você se divertir na internet." />
+  <meta name="author" content="victorsaib" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Humor e Piadas - As Melhores Piadas Online</title>
+  <title>Vídeos</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: black;
+      color: white;
+      gap: 30px;
+      border: 1px solid red; /* corrigido */
+      padding: 10px;
+      align-items: center; /* agora funciona */
+    }
+    .video {
+      flex-grow: 1; /* para ocupar espaço restante */
+      /* ajustei para que seja um container flex vertical para os vídeos */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      background-color: blue;
+      padding: 10px 20px;
+      color: white;
+      max-height: 600px;
+      overflow-y: auto;
+      border: 2px solid white; /* corrigido */
+      border-radius: 5px;
+    }
+    #btn {
+      width: 150px;
+      height: 50px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    iframe {
+      border-radius: 5px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="btn">CARREGAR+</button>
+    <div id="video" class="video">
+      <!-- Vídeos vão aparecer aqui -->
+    </div>
+  </div>
+
+  <script src="videos.js"></script>
+</body>
+</html>
